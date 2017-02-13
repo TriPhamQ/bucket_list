@@ -9,7 +9,16 @@
 import UIKit
 
 class AddItemTableViewController: UITableViewController {
+    weak var del: CancelButtonDel?
+    @IBAction func cancelButtonPressed(_ sender: UIBarButtonItem) {
+        print("cancel")
+        del?.cancelButtonPressed(by: self)
+    }
 
+    @IBAction func saveButtonPressed(_ sender: UIBarButtonItem) {
+        print("save")
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
     }

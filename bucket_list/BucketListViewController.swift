@@ -28,6 +28,12 @@ class BucketListViewController: UITableViewController {
         cell.textLabel?.text = tasks[indexPath.row]
         return cell
     }
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        let navigationController = segue.destination as! UINavigationController
+        let addItemTableController = navigationController.topViewController as! AddItemTableViewController
+        AddItemTableViewController.del = self
+        
+    }
 }
 
 		
