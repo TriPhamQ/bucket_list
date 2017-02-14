@@ -9,18 +9,27 @@
 import UIKit
 
 class AddItemTableViewController: UITableViewController {
-    weak var del: CancelButtonDel?
+    weak var del: AddItemTableViewDel?
+    var item: String?
+    var indexPath: NSIndexPath?
+    
+    @IBOutlet weak var inputTextField: UITextField!
     @IBAction func cancelButtonPressed(_ sender: UIBarButtonItem) {
         print("cancel")
-        del?.cancelButtonPressed(by: self)
+        del?.cancelPressed(by: self)
     }
 
     @IBAction func saveButtonPressed(_ sender: UIBarButtonItem) {
         print("save")
+        
+        if let text = inputTextField.text {
+            del?.savedPressed(by: self, with: text, at: indexPath)
+        }
     }
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        inputTextField.text = item
     }
 
     override func didReceiveMemoryWarning() {

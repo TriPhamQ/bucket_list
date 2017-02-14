@@ -13,7 +13,7 @@
 		E54DA7A01E5259BE0001DA6C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E54DA79F1E5259BE0001DA6C /* Assets.xcassets */; };
 		E54DA7A31E5259BE0001DA6C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E54DA7A11E5259BE0001DA6C /* LaunchScreen.storyboard */; };
 		E54DA7AB1E5271250001DA6C /* AddItemTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E54DA7AA1E5271250001DA6C /* AddItemTableViewController.swift */; };
-		E54DA7AD1E5273A60001DA6C /* CancelButtonDel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E54DA7AC1E5273A60001DA6C /* CancelButtonDel.swift */; };
+		E575E8011E5397F0004A8737 /* AddItemTableViewDel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E575E8001E5397F0004A8737 /* AddItemTableViewDel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -25,7 +25,7 @@
 		E54DA7A21E5259BE0001DA6C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		E54DA7A41E5259BF0001DA6C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E54DA7AA1E5271250001DA6C /* AddItemTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddItemTableViewController.swift; sourceTree = "<group>"; };
-		E54DA7AC1E5273A60001DA6C /* CancelButtonDel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CancelButtonDel.swift; sourceTree = "<group>"; };
+		E575E8001E5397F0004A8737 /* AddItemTableViewDel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddItemTableViewDel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,11 +61,11 @@
 				E54DA7AA1E5271250001DA6C /* AddItemTableViewController.swift */,
 				E54DA7981E5259BE0001DA6C /* AppDelegate.swift */,
 				E54DA79A1E5259BE0001DA6C /* BucketListViewController.swift */,
+				E575E8001E5397F0004A8737 /* AddItemTableViewDel.swift */,
 				E54DA79C1E5259BE0001DA6C /* Main.storyboard */,
 				E54DA79F1E5259BE0001DA6C /* Assets.xcassets */,
 				E54DA7A11E5259BE0001DA6C /* LaunchScreen.storyboard */,
 				E54DA7A41E5259BF0001DA6C /* Info.plist */,
-				E54DA7AC1E5273A60001DA6C /* CancelButtonDel.swift */,
 			);
 			path = bucket_list;
 			sourceTree = "<group>";
@@ -142,10 +142,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E575E8011E5397F0004A8737 /* AddItemTableViewDel.swift in Sources */,
 				E54DA79B1E5259BE0001DA6C /* BucketListViewController.swift in Sources */,
 				E54DA7991E5259BE0001DA6C /* AppDelegate.swift in Sources */,
 				E54DA7AB1E5271250001DA6C /* AddItemTableViewController.swift in Sources */,
-				E54DA7AD1E5273A60001DA6C /* CancelButtonDel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -307,6 +307,7 @@
 				E54DA7A91E5259BF0001DA6C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
